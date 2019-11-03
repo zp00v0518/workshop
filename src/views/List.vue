@@ -1,5 +1,5 @@
 <template>
-  <ul id="app">
+  <ul class="list">
     <ListItem v-for="item in list" :index="item" :key="item" />
 
     <button @click="list.push(list.length+1)">Add</button>
@@ -17,6 +17,21 @@ export default {
     return {
       list: [1, 2, 3]
     };
+  },
+  created() {
+    const list = ["list-1", 'list-2'];
+    this.$store.commit("SET_LIST_IMG", list);
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
+
+
+

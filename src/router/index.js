@@ -1,9 +1,10 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import List from '../views/List.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home';
+import List from '../views/List';
+import IfElse from '../views/IfElse';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -11,11 +12,16 @@ const routes = [
     name: 'home',
     component: Home
   },
-    {
+  {
     path: '/list',
     name: 'List',
     component: List
   },
+  {
+    path: '/ifelse',
+    name: 'IfElse',
+    component: IfElse
+  }
   // {
   //   path: '/about',
   //   name: 'about',
@@ -24,12 +30,12 @@ const routes = [
   //   // which is lazy-loaded when the route is visited.
   //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   // }
-]
+];
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
-})
+});
 
-export default router
+export default router;

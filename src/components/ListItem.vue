@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="list_item">
     <li :class="index % 2 === 0 ? 'yellow' : 'blue'">{{index}}</li>
   </div>
 </template>
@@ -12,12 +12,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-li{
-  &.yellow{
+.list_item {
+  min-width: 30%;
+  & .yellow {
     background-color: yellow;
   }
-  &.blue{
+  & .blue {
     background-color: blue;
   }
 }
 </style>
+
+
+

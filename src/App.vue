@@ -31,5 +31,6 @@ export default {
   flex-grow: 3;
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
 </style>

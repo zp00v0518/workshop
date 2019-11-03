@@ -6,13 +6,16 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
   components: {
     HelloWorld
+  },
+  created () {
+    const list = ['folders'];
+    this.$store.commit("SET_LIST_IMG", list)
   }
 }
 </script>
