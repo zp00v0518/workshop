@@ -2,7 +2,6 @@
   <div>
     <input type="text" v-model="value" />
     <div>{{turn}}</div>
-    <input type="text" :value='value' @input="value = $event.target.value">
   </div>
 </template>
 
@@ -14,10 +13,19 @@ export default {
       value: ""
     };
   },
+  created() {
+    const list = ["computed"];
+    this.$store.commit("SET_LIST_IMG", list);
+  },
   computed: {
     turn() {
-      return Array.from(this.value).reverse().join('');
+      return Array.from(this.value)
+        .reverse()
+        .join("");
     }
   }
 };
 </script>
+
+
+

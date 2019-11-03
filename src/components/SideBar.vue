@@ -5,6 +5,7 @@
     <router-link to="/list_2">List_2</router-link>
     <router-link to="/ifelse">IfElse</router-link>
     <router-link to="/computed">Computed</router-link>
+    <router-link to="/hooks">Hooks</router-link>
   </div>
 </template>
 

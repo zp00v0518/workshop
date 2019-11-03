@@ -5,6 +5,7 @@ import List from '../views/List';
 import List_2 from '../views/List_2';
 import IfElse from '../views/IfElse';
 import Computed from '../views/Computed';
+import Hooks from '../views/Hooks';
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/computed',
     name: 'Computed',
     component: Computed
+  },
+      {
+    path: '/hooks',
+    name: 'Hooks',
+    component: Hooks
   }
   // {
   //   path: '/about',
