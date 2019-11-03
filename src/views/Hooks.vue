@@ -25,8 +25,11 @@ export default {
   },
   created() {
     alert(`creted, index:${this.index}`);
-    const list = ["hooks"];
+    const list = ["hooks", 'lifecycle'];
     this.$store.commit("SET_LIST_IMG", list);
+  },
+  beforeMount () {
+    alert(`beforeMount`);
   },
   mounted() {
     alert(`mounted, ${this.$el.tagName}`);

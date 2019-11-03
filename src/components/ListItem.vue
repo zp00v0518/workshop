@@ -7,7 +7,10 @@
 <script>
 export default {
   name: "ListItem",
-  props: ["index"]
+  props: ["index"],
+  // created () {
+  //   alert('created')
+  // },
 };
 </script>
 
