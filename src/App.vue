@@ -1,32 +1,35 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="content">
+      <SideBar />
+      <router-view />
     </div>
-    <router-view/>
+    <Images/>
   </div>
 </template>
 
+<script>
+import SideBar from "./components/SideBar";
+import Images from "./components/Images";
+export default {
+  name: "App",
+  components: { SideBar, Images }
+};
+</script>
+
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.content{
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
 }
 </style>
