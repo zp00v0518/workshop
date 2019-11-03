@@ -8,6 +8,7 @@ import Computed from '../views/Computed';
 import Hooks from '../views/Hooks';
 import VuexPage from '../views/VuexPage';
 import ChildParent from '../views/ChildParent';
+import ParentChild from '../views/ParentChild';
 
 Vue.use(VueRouter);
 
@@ -51,6 +52,11 @@ const routes = [
     path: '/child-parent',
     name: 'ChildParent',
     component: ChildParent
+  },
+  {
+    path: '/parent-child',
+    name: 'ParentChild',
+    component: ParentChild
   },
   {
     path: '/dynamic',

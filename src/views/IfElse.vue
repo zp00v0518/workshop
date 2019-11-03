@@ -17,7 +17,7 @@ export default {
   name: "IfElse",
   data() {
     return {
-      index: 1
+      index: 0
     };
   },
   created() {

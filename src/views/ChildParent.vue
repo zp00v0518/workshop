@@ -17,7 +17,7 @@ export default {
     };
   },
   created() {
-    const list = ["p-h_1", "p-h_2"];
+    const list = ["p-h_2", "p-h_1"];
     this.$store.commit("SET_LIST_IMG", list);
   }
 };
