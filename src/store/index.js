@@ -8,8 +8,10 @@ export default new Vuex.Store({
     imgList: []
   },
   mutations: {
-    SET_LIST_IMG: (state, payload) =>{
+    SET_LIST_IMG: (state, payload) => {
       state.imgList = payload;
     }
   }
 });
+
+
