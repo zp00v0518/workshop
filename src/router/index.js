@@ -30,20 +30,20 @@ const routes = [
     name: 'IfElse',
     component: IfElse
   },
-    {
+  {
     path: '/computed',
     name: 'Computed',
     component: Computed
   },
-      {
+  {
     path: '/hooks',
     name: 'Hooks',
     component: Hooks
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/dynamic',
+    component: () =>
+      import(/* webpackChunkName: "dynamic" */ '../views/Dynamic.vue')
   }
 ];
 

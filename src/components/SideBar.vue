@@ -6,6 +6,7 @@
     <router-link to="/ifelse">IfElse</router-link>
     <router-link to="/computed">Computed</router-link>
     <router-link to="/hooks">Hooks</router-link>
+    <router-link to="/dynamic">Dynamic</router-link>
   </div>
 </template>
 
