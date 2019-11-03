@@ -4,6 +4,7 @@ import Home from '../views/Home';
 import List from '../views/List';
 import List_2 from '../views/List_2';
 import IfElse from '../views/IfElse';
+import Computed from '../views/Computed';
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/ifelse',
     name: 'IfElse',
     component: IfElse
+  },
+    {
+    path: '/computed',
+    name: 'Computed',
+    component: Computed
   }
   // {
   //   path: '/about',

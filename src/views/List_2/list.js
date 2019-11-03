@@ -1,7 +1,7 @@
 import ListItem from "../../components/ListItem";
 
 export default {
-  name: "List",
+  name: "List_2",
   components: { ListItem },
   data() {
     return {
@@ -9,7 +9,7 @@ export default {
     };
   },
   created() {
-    const list = ["list-1", 'list-2'];
+    const list = ["list-2-2", 'list-2-1'];
     this.$store.commit("SET_LIST_IMG", list);
   }
 };
