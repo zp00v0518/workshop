@@ -6,6 +6,7 @@ import List_2 from '../views/List_2';
 import IfElse from '../views/IfElse';
 import Computed from '../views/Computed';
 import Hooks from '../views/Hooks';
+import VuexPage from '../views/VuexPage';
 
 Vue.use(VueRouter);
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/hooks',
     name: 'Hooks',
     component: Hooks
+  },
+  {
+    path: '/vuex',
+    name: 'VuexPage',
+    component: VuexPage
   },
   {
     path: '/dynamic',

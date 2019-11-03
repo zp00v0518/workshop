@@ -1,12 +1,16 @@
 <template>
-  <div>Dynamically loaded page</div>
+  <div>Vuex page</div>
 </template>
 
 <script>
 export default {
+  name: "VuexPage",
   created() {
-    const list = ["template", "router_1"];
+    const list = ["store_1", 'store_2', 'store_3'];
     this.$store.commit("SET_LIST_IMG", list);
   }
 };
 </script>
+
+
+
