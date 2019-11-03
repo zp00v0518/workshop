@@ -10,6 +10,7 @@
     <router-link to="/vuex">Vuex</router-link>
     <router-link to="/child-parent">ChildParent</router-link>
     <router-link to="/parent-child">ParentChild</router-link>
+    <router-link to="/usevue">UseVue</router-link>
   </div>
 </template>
 

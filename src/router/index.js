@@ -9,6 +9,7 @@ import Hooks from '../views/Hooks';
 import VuexPage from '../views/VuexPage';
 import ChildParent from '../views/ChildParent';
 import ParentChild from '../views/ParentChild';
+import UseVue from '../views/UseVue';
 
 Vue.use(VueRouter);
 
@@ -57,6 +58,11 @@ const routes = [
     path: '/parent-child',
     name: 'ParentChild',
     component: ParentChild
+  },
+  {
+    path: '/usevue',
+    name: 'UseVue',
+    component: UseVue
   },
   {
     path: '/dynamic',
