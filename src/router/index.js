@@ -7,6 +7,7 @@ import IfElse from '../views/IfElse';
 import Computed from '../views/Computed';
 import Hooks from '../views/Hooks';
 import VuexPage from '../views/VuexPage';
+import ChildParent from '../views/ChildParent';
 
 Vue.use(VueRouter);
 
@@ -45,6 +46,11 @@ const routes = [
     path: '/vuex',
     name: 'VuexPage',
     component: VuexPage
+  },
+  {
+    path: '/child-parent',
+    name: 'ChildParent',
+    component: ChildParent
   },
   {
     path: '/dynamic',

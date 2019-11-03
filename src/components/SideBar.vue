@@ -8,6 +8,8 @@
     <router-link to="/hooks">Hooks</router-link>
     <router-link to="/dynamic">Dynamic</router-link>
     <router-link to="/vuex">Vuex</router-link>
+    <router-link to="/child-parent">ChildParent</router-link>
+    <router-link to="/parent-child">ParentChild</router-link>
   </div>
 </template>
 
