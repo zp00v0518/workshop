@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home';
 import List from '../views/List';
+import List_2 from '../views/List_2';
 import IfElse from '../views/IfElse';
 
 Vue.use(VueRouter);
@@ -16,6 +17,11 @@ const routes = [
     path: '/list',
     name: 'List',
     component: List
+  },
+  {
+    path: '/list_2',
+    name: 'List_2',
+    component: List_2
   },
   {
     path: '/ifelse',
