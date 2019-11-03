@@ -12,13 +12,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/variables.scss";
 .list_item {
   min-width: 30%;
   & .yellow {
-    background-color: yellow;
+    background-color: $main-yellow;
+    color: $main-blue
   }
   & .blue {
-    background-color: blue;
+    background-color: $main-blue;
+    color: $main-yellow;
   }
 }
 </style>

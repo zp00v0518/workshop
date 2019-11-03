@@ -32,5 +32,6 @@ export default {
   display: flex;
   flex-direction: column;
   width: 30%;
+  font-size: 40px;
 }
 </style>
