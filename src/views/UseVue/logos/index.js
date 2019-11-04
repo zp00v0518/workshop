@@ -12,6 +12,10 @@ import upwork from './upwork.svg';
 import wizzAir from './wizzAir.svg';
 import laravell from './laravell.svg';
 import agiloo from './agiloo.svg';
+import epicenter from './epicenter.svg';
+import fintechers from './fintechers.svg';
+import onexbet from './1xbet.svg';
+import wiki from './wiki.svg';
 
 
 export default {
@@ -28,6 +32,9 @@ export default {
   pornhub,
   upwork,
   laravell,
-  agiloo
-  
+  epicenter,
+  agiloo,
+  fintechers,
+  onexbet,
+  wiki
 }
