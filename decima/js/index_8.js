@@ -81,9 +81,9 @@ const app = new Vue({
     <ul>
       <li v-for="item in items" :key="item">{{item}}</li>
     </ul>
-    <form @submit.prevent>
+    <form @submit.prevent="addItem">
       <label for="new-todo">Что нужно сделать?</label>
-      <input id="new-todo" v-model="text" @change="addItem">
+      <input id="new-todo" v-model="text">
       <button>Добавить #{{ items.length+1 }}</button>
     </form>
   </div>
@@ -96,6 +96,7 @@ const app = new Vue({
   },
   methods: {
     addItem(){
+      if(this.text.length === 0) return;
       this.items.push(this.text);
       this.text = '';
     }
