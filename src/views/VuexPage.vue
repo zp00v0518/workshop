@@ -6,7 +6,7 @@
 export default {
   name: "VuexPage",
   created() {
-    const list = ["store_1", 'store_2', 'store_3'];
+    const list = ["store_1", 'store_3', 'store_2'];
     this.$store.commit("SET_LIST_IMG", list);
   }
 };

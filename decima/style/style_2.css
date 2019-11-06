@@ -1,0 +1,61 @@
+body{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#images{
+  display: flex;
+}
+#app{
+  flex-grow: 2;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.images__item{
+  margin-bottom: 30px;
+}
+
+button{
+  min-width: 100px;
+  font-size: inherit;
+  margin: 10px;
+}
+li{
+  min-width: 30%;
+}
+li.blue{
+  background-color: blue;
+}
+li.yellow{
+  background-color: yellow;
+}
+
+
+.react{
+  justify-content: space-around;
+  font-size: 45px;
+}
+.react #vue{
+  border-left: 2px solid grey;
+  padding-left: 10px;
+}
+.react .images__item{
+  width: 20%;
+  flex-grow: 3;
+  margin: 10px;
+}
+.react #images{
+  justify-content: space-around;
+}

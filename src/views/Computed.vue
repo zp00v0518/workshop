@@ -2,6 +2,7 @@
   <div>
     <input type="text" v-model="value" />
     <div>{{turn}}</div>
+    <!-- <div>{{turn2}}</div> -->
   </div>
 </template>
 
@@ -22,7 +23,11 @@ export default {
       return Array.from(this.value)
         .reverse()
         .join("");
-    }
+    },
+    // turn2() {
+    //   alert('turn2');
+    //   return "turn2";
+    // }
   }
 };
 </script>

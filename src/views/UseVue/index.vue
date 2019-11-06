@@ -1,11 +1,11 @@
 <template>
   <div class="logos swiper-inner">
-    <img class="logos__item" :src="item" alt v-for="(item, index) in logos" :key="index" />
-    <!-- <swiper :options="swiperOption" ref="swiperInst">
+    <!-- <img class="logos__item" :src="item" alt v-for="(item, index) in logos" :key="index" /> -->
+    <swiper :options="swiperOption" ref="swiperInst">
       <swiper-slide class="logos__item" :src="item" alt v-for="(item, index) in logos" :key="index">
         <img :src="item" />
       </swiper-slide>
-    </swiper> -->
+    </swiper>
   </div>
 </template>
 
@@ -13,12 +13,12 @@
 import logos from "./logos";
 import "swiper/dist/css/swiper.css";
 
-// import { swiper, swiperSlide } from "vue-awesome-swiper";
+import { swiper, swiperSlide } from "vue-awesome-swiper";
 export default {
-  // components: {
-  //   swiper,
-  //   swiperSlide
-  // },
+  components: {
+    swiper,
+    swiperSlide
+  },
   data() {
     return {
       logos,
@@ -26,13 +26,12 @@ export default {
         effect: "cube",
         grabCursor: true,
         loop: true,
-        speed: 300,
+        speed: 700,
         cubeEffect: {
           shadow: true,
           slideShadows: true,
           shadowOffset: 20,
           shadowScale: 0.94,
-          transitionDuration: 700
         },
         autoplay: {
           delay: 800,
@@ -44,32 +43,32 @@ export default {
   created() {
     this.$store.commit("SET_LIST_IMG", []);
   },
-  // computed: {
-  //   swiperInst() {
-  //     return this.$refs.swiperInst.swiper;
-  //   }
-  // },
+  computed: {
+    swiperInst() {
+      return this.$refs.swiperInst.swiper;
+    }
+  },
 
 };
 </script>
 
 <style lang="scss">
-.logos {
-  &__item {
-    width: 200px;
-    height: 100px;
-    margin: 15px;
-    & > img{
-      width: 80%;
-    }
-  }
-}
-// .swiper-inner {
-//   position: relative;
-//   overflow: hidden;
-//   height: 330px;
-//   padding: 15px;
+// .logos {
+//   &__item {
+//     width: 200px;
+//     height: 100px;
+//     margin: 15px;
+//     & > img{
+//       width: 80%;
+//     }
+//   }
 // }
+.swiper-inner {
+  position: relative;
+  overflow: hidden;
+  height: 330px;
+  padding: 15px;
+}
 .swiper-container {
   width: 300px !important;
   height: 300px;

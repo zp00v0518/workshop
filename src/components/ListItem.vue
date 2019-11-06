@@ -9,7 +9,7 @@ export default {
   name: "ListItem",
   props: ["index"],
   // created () {
-  //   alert('created')
+  //   alert(`created  index:${this.index}`)
   // },
 };
 </script>
